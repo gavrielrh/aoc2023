@@ -1,9 +1,10 @@
-const digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-
 export function getFirstDigitPart1(input: string): string {
   for (let i = 0; i < input.length; i++) {
     const c = input[i];
-    if (digits.includes(c)) {
+    if (
+      c === "0" || c === "1" || c === "2" || c === "3" || c === "4" ||
+      c === "5" || c === "6" || c === "7" || c === "8" || c === "9"
+    ) {
       return c;
     }
   }
@@ -13,7 +14,10 @@ export function getFirstDigitPart1(input: string): string {
 export function getLastDigitPart1(input: string): string {
   for (let i = input.length - 1; i >= 0; i--) {
     const c = input[i];
-    if (digits.includes(c)) {
+    if (
+      c === "0" || c === "1" || c === "2" || c === "3" || c === "4" ||
+      c === "5" || c === "6" || c === "7" || c === "8" || c === "9"
+    ) {
       return c;
     }
   }
@@ -35,7 +39,10 @@ export function getFirstDigitPart2(input: string): string {
   }
   for (let i = 0; i < input.length; i++) {
     const c = input[i];
-    if (digits.includes(c)) {
+    if (
+      c === "0" || c === "1" || c === "2" || c === "3" || c === "4" ||
+      c === "5" || c === "6" || c === "7" || c === "8" || c === "9"
+    ) {
       return c;
     }
     // z -> check if next three chars are ero
@@ -103,7 +110,10 @@ export function getLastDigitPart2(input: string): string {
   }
   for (let i = input.length - 1; i >= 0; i--) {
     const c = input[i];
-    if (digits.includes(c)) {
+    if (
+      c === "0" || c === "1" || c === "2" || c === "3" || c === "4" ||
+      c === "5" || c === "6" || c === "7" || c === "8" || c === "9"
+    ) {
       return c;
     }
     // zero -> orez
