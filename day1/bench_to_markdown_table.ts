@@ -50,7 +50,7 @@ const tableRows = benches.map(
   (bench) => [
     bench.name,
     `${bench.results[0].ok.avg / 1000} µs/iter`,
-    bench.results[0].ok.n / 1000,
+    bench.results[0].ok.n,
     `(${bench.results[0].ok.min / 1000} µs... ${
       bench.results[0].ok.max / 1000
     } µs)`,
